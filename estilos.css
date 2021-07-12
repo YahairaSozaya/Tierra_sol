@@ -1,0 +1,138 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contenedor{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.dondeir.com/wp-content/uploads/2016/07/estrellas_cdmx_a.jpg");
+  display:flex;
+  justify-content: center;
+  position:relative;
+  animation:estrellas linear 1s infinite;
+}
+
+.contenedor_tierra{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: aqua;
+  position:absolute;
+  left:630px;
+  top:20px;
+  animation:tierra linear 15s infinite;
+  background-image: url("./images/tierra.jpg");
+  background-size: cover;
+}
+
+.contenedor_sol{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(255, 196, 0);
+  position: absolute;
+  left: 600px;
+  top:250px;
+  background-image: url("./images/sol.jpeg");
+  background-size: cover;
+  animation:linear sol 5s infinite;
+}
+
+@keyframes tierra{
+  0%{
+    transform: rotate(0deg);
+    animation: linear;
+  }
+
+  8.3%{
+    transform:translateX(250px) translateY(50px)  rotate(30deg);
+    animation: linear;
+    background-image: url("./images/tierra2.jpg");
+  }
+
+  16.6%{
+    transform:translateX(400px) translateY(150px) rotate(60deg);
+    animation: linear;
+  }
+
+  25%{
+    transform:translateX(450px) translateY(260px) rotate(90deg);
+    animation:linear;
+  }
+
+  33.3%{
+    transform:translateX(400px) translateY(400px) rotate(120deg);
+    animation: linear;
+  }
+
+  41.6%{
+    transform:translateX(250px) translateY(500px) rotate(150deg);
+    animation: linear;
+  }
+
+  50% {
+    transform: translateY(530px) rotate(180deg);
+    animation: linear;
+  }
+
+  58.3%{
+    transform:translateX(-250px) translateY(500px) rotate(150deg);
+    animation: linear;
+  }
+
+  66.6%{
+    transform:translateX(-400px) translateY(400px) rotate(120deg);
+    animation: linear;
+  }
+
+  75%{
+    transform:translateX(-450px) translateY(260px) rotate(90deg);
+    animation:linear;
+  }
+
+  83.3%{
+    transform:translateX(-400px) translateY(150px) rotate(60deg);
+    animation:linear;
+  }
+
+  91.6%{
+    transform:translateX(-250px) translateY(50px) rotate(30deg);
+    animation: linear;
+  }
+
+  100%{
+    transform: rotate(0deg);
+    animation:linear;
+  }
+
+}
+
+@keyframes sol {
+  0%{
+    border:2px white solid;
+    transform:scale(1.1);
+  }
+
+  50%{
+    border:5px white solid;
+    transform:scale(1.2);
+  }
+
+  100%{
+    border:4px rgb(253,248, 226) solid;
+    transform:scale(1.1);
+  }
+}
+
+@keyframes estrellas{
+  0%{
+    transform: scale(1.005);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
