@@ -3,4 +3,4 @@
 
 Animación de CSS
 
-<img src="./readme.png" alt="imagen de readme" width="400px">
+<img src="./Readme.png" alt="imagen de readme" width="400px">
